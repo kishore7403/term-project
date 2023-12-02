@@ -18,7 +18,7 @@ const SignUpPage: React.FC = () => {
     }
 
     try {
-      const response = await fetch('https://b8429pibz2.execute-api.us-east-1.amazonaws.com/v3/signin', {
+      const response = await fetch('https://6wfabuly93.execute-api.us-east-1.amazonaws.com/Production-1/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
