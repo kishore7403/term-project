@@ -14,7 +14,7 @@ function Login() {
     setLoading(true);
 
     try {
-      const response = await fetch('https://b8429pibz2.execute-api.us-east-1.amazonaws.com/v3/login', {
+      const response = await fetch('https://6wfabuly93.execute-api.us-east-1.amazonaws.com/t1/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
