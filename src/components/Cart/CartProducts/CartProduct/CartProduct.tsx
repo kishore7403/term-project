@@ -26,6 +26,8 @@ const CartProduct = ({ product }: IProps) => {
   const handleIncreaseProductQuantity = () => increaseProductQuantity(product);
   const handleDecreaseProductQuantity = () => decreaseProductQuantity(product);
 
+  const baseUrl = 'https://shopping-cart-images-5902.s3.amazonaws.com/products/';
+
   return (
     <S.Container>
       <S.DeleteButton
@@ -33,7 +35,8 @@ const CartProduct = ({ product }: IProps) => {
         title="remove product from cart"
       />
       <S.Image
-        src={require(`static/products/${sku}-1-cart.webp`)}
+       src={`${baseUrl}${sku}-1-cart.webp`}
+        // src={require(`static/products/${sku}-1-cart.webp`)}
         alt={title}
       />
       <S.Details>
